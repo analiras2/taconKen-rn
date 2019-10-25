@@ -4,7 +4,7 @@ import {
   View,
   Text,
 } from 'react-native';
-import colors from '../res/colors';
+import { colors, verticalScale } from '../res';
 
 type Props = {
   title: string
@@ -20,7 +20,7 @@ const Toolbar = (props: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 56,
+    height: verticalScale(56),
     flexDirection: 'row',
     backgroundColor: colors.primary,
     alignItems: 'center',

@@ -1,4 +1,4 @@
-export default {
+export const strings = {
   appName: 'TaconKen',
   globalOk: 'OK',
   globalYes: 'Sim',
