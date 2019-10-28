@@ -1,10 +1,12 @@
-import { Dimensions } from 'react-native';
+// eslint-disable-next-line import/prefer-default-export
+import {Dimensions} from 'react-native';
 
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const guidelineBaseWidth = 360;
 const guidelineBaseHeight = 640;
 
-export const horizontalScale = size => width / guidelineBaseWidth * size;
-export const verticalScale = size => height / guidelineBaseHeight * size;
-export const fontScale = (size, factor = 0.5) => size + (horizontalScale(size) - size) * factor;
+export const horizontalScale = (size: number): number => (width / guidelineBaseWidth) * size;
+export const verticalScale = (size: number): number => (height / guidelineBaseHeight) * size;
+export const fontScale = (size: number, factor = 0.5): number =>
+  size + (horizontalScale(size) - size) * factor;

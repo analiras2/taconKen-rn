@@ -1,39 +1,34 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  TouchableOpacity
-} from 'react-native';
-import { strings, verticalScale, colors } from '../res';
-
-const BottomNavigationBar = () => {
-  return (
-    <View style={styles.container}>
-      <TouchableOpacity style={styles.menu} onPress={() => { }}>
-        <Text style={styles.title}>{strings.lent}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.menu} onPress={() => { }}>
-        <Text style={styles.title}>{strings.borrowed}</Text>
-      </TouchableOpacity>
-    </View>
-  );
-};
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import {strings, verticalScale, colors} from '../res';
 
 const styles = StyleSheet.create({
   container: {
     height: verticalScale(58),
     flexDirection: 'row',
-    backgroundColor: colors.primary
+    backgroundColor: colors.primary,
   },
   menu: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   title: {
-    color: colors.white
-  }
+    color: colors.white,
+  },
 });
+
+const BottomNavigationBar = (): JSX.Element => {
+  return (
+    <View style={styles.container}>
+      <TouchableOpacity style={styles.menu} onPress={(): void => {}}>
+        <Text style={styles.title}>{strings.lent}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.menu} onPress={(): void => {}}>
+        <Text style={styles.title}>{strings.borrowed}</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 export default BottomNavigationBar;

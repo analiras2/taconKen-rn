@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const colors = {
   primary: '#3bafda',
   primaryDark: '#24a3d6',

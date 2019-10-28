@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const strings = {
   appName: 'TaconKen',
   globalOk: 'OK',
@@ -16,6 +17,6 @@ export const strings = {
   saveFailureMessage: 'Não foi possível salvar seu item, tente novamente mais tarde',
   deleteFailureMessage: 'Não foi possível deletar seu item, tente novamente mais tarde',
   emptyFieldMsg: 'Todos os campos devem ser preenchidos',
-  emptyList: 'Nenhum item inserido clique no botão \'+\' para adicionar um novo item',
+  emptyList: "Nenhum item inserido clique no botão '+' para adicionar um novo item",
   deleteConfirmation: 'Deseja realmente deletar o item?',
 };
